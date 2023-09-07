@@ -1,5 +1,7 @@
 import type { Config } from 'tailwindcss'
 
+import radUiColors from "./base.tokens"
+
 const config: Config = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -8,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors:{
+        ...radUiColors
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
