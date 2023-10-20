@@ -1,11 +1,12 @@
 
 .rad-ui-button{
-    height: 32px;
+    height: 24px;
     border-radius: 4px;
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:0px 12px;
+    padding:0px 8px;
+    font-size: 0.7em;
 }
 .button-solid{
     background-color: var(--rad-ui-color-accent-900) !important;
@@ -17,8 +18,8 @@
 
 /** Soft */
 .button-soft{
-    color: var(--rad-ui-color-accent-900);
-    background-color:  var(--rad-ui-color-accent-400);
+    color: var(--rad-ui-color-accent-900) ;
+    background-color:  var(--rad-ui-color-accent-400) !important;
 }
 .button-soft:hover{
     background-color:  var(--rad-ui-color-accent-500);

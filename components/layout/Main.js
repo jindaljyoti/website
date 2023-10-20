@@ -32,7 +32,7 @@ const MainLayout = ({ children }) => {
               </li>
             </ul>
           </div>
-          <Button variant="solid" onClick={toggleDarkMode}  >Toggle Dark Mode</Button>
+          <Button color="tomato" variant="outline" onClick={toggleDarkMode}  >Toggle theme</Button>
         </div>
         <main>{children}</main>
       </div>
