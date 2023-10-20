@@ -5,8 +5,9 @@
 
 @layer base {
   @import url("./base.tokens.css");
+ 
 }
-
+@import url("./component.styles.css");
 
 /* :root {
   --foreground-rgb: 0, 0, 0;
