@@ -6,14 +6,14 @@ import { Button } from "@kotapi/rad-ui"
 
 const MainLayout = ({ children }) => {
 
-  const [darkMode, setDarkMode] = useState(  localStorage.getItem('darkMode')==='true'?true:false || false)
+
+  const [darkMode, setDarkMode] = useState( typeof window!=='undefined' && localStorage.getItem('darkMode')==='true'?true:false || false)
 
 
   const toggleDarkMode = () => {
     const toggledState = !darkMode
     localStorage.setItem('darkMode', toggledState)
     setDarkMode(toggledState)
-    console.log(toggledState,localStorage.getItem('darkMode'))
   }
 
   const HeartIcon = () => {
@@ -36,7 +36,9 @@ const MainLayout = ({ children }) => {
               </li>
             </ul>
           </div>
-          <Button color="tomato" variant="outline" onClick={toggleDarkMode}  >Toggle theme</Button>
+          <Button variant="soft" onClick={toggleDarkMode}>
+            {darkMode ? 'Light' : 'Dark'} Mode
+          </Button>
         </div>
         <main>{children}</main>
       </div>
