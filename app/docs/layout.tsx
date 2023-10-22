@@ -1,4 +1,4 @@
-const Layout = ({children})=>{
+const Layout = ({children}:any)=>{
 
     const testItemClasses = "px-3 py-2 text-sm font-normal text-gray-1000 rounded-2xl !hover:bg-plum-50 mb-0.5 cursor-pointer"
 
