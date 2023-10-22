@@ -5,7 +5,7 @@ import { Button } from "@kotapi/rad-ui"
 
 
 const MainLayout = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(  localStorage.getItem('darkMode')==='true'?true:false || false)
+  const [darkMode, setDarkMode] = useState( typeof localStorage!=='undefined' && localStorage.getItem('darkMode')==='true'?true:false || false)
 
 
   const toggleDarkMode = () => {
