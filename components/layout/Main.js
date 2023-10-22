@@ -1,15 +1,19 @@
 'use client'
-
-import { useState } from 'react'
+import Theme from "@/components/layout/Theme"
+import { useEffect, useState } from 'react'
 import { Button } from "@kotapi/rad-ui"
 
 
 const MainLayout = ({ children }) => {
 
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(  localStorage.getItem('darkMode')==='true'?true:false || false)
+
 
   const toggleDarkMode = () => {
-    setDarkMode(!darkMode)
+    const toggledState = !darkMode
+    localStorage.setItem('darkMode', toggledState)
+    setDarkMode(toggledState)
+    console.log(toggledState,localStorage.getItem('darkMode'))
   }
 
   const HeartIcon = () => {
@@ -17,7 +21,7 @@ const MainLayout = ({ children }) => {
   }
 
   return (
-    <>
+    <Theme isDark={darkMode}>
       <div className={`min-h-screen ${darkMode ? 'rad-ui-dark-theme bg-black' : ''}`} data-accent-color="red">
         {/* Navbar start */}
         <div className='px-3 py-2 flex items-center justify-between border-b border-gray-500'>
@@ -28,7 +32,7 @@ const MainLayout = ({ children }) => {
            </a>
             <ul className='text-sm flex items-center'>
               <li>
-                <a className='text-gray-950 hover:text-gray-1000' href="/colors">Colors</a>
+                <a className='text-gray-950 hover:text-gray-1000' href="/docs/introduction">Docs</a>
               </li>
             </ul>
           </div>
@@ -38,7 +42,7 @@ const MainLayout = ({ children }) => {
       </div>
 
 
-    </>
+    </Theme>
   );
 }
 export default MainLayout;

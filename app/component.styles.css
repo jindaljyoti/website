@@ -9,7 +9,7 @@
     font-size: 0.7em;
 }
 .button-solid{
-    background-color: var(--rad-ui-color-accent-900) !important;
+    background-color: var(--rad-ui-color-accent-900);
     color: white;
 }
 .button-solid:hover{
@@ -19,7 +19,7 @@
 /** Soft */
 .button-soft{
     color: var(--rad-ui-color-accent-900) ;
-    background-color:  var(--rad-ui-color-accent-400) !important;
+    background-color:  var(--rad-ui-color-accent-400);
 }
 .button-soft:hover{
     background-color:  var(--rad-ui-color-accent-500);

@@ -3,6 +3,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Main from "@/components/layout/Main"
 
+// @import url("./component.styles.css");
+import "./component.styles.css"
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -15,18 +18,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-
- 
-
   return (
     <html lang="en">
       <body className={inter.className}>
         <Main>
-        {children}
+          
+            {children}
+          
         </Main>
-       
-       
-       
       </body>
     </html>
   )
