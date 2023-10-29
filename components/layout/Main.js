@@ -6,8 +6,6 @@ import { Button } from "@kotapi/rad-ui"
 
 const MainLayout = ({ children }) => {
   const [darkMode, setDarkMode] = useState( typeof localStorage!=='undefined' && localStorage.getItem('darkMode')==='true'?true:false || false)
-
-
   const toggleDarkMode = () => {
     const toggledState = !darkMode
     localStorage.setItem('darkMode', toggledState)
@@ -20,9 +18,9 @@ const MainLayout = ({ children }) => {
 
   return (
     <Theme isDark={darkMode} >
-      <div className={`min-h-screen ${darkMode ? 'rad-ui-dark-theme bg-black' : ''}`} data-accent-color="red">
+      <div className={`min-h-screen ${darkMode ? 'rad-ui-dark-theme bg-black' : 'bg-white'}`} data-accent-color="red">
         {/* Navbar start */}
-        <div className='px-3 py-2 flex items-center justify-between border-b border-gray-500'>
+        <div className={`px-3 py-2 flex items-center justify-between border-b border-gray-500 sticky top-0 ${darkMode ? 'rad-ui-dark-theme bg-black' : 'bg-white'}`}>
 
           <div className='mr-3 flex space-x-8'>
             <a className='text-gray-1000 flex items-center space-x-2 text-md' href="/">
@@ -34,7 +32,7 @@ const MainLayout = ({ children }) => {
               </li>
             </ul>
           </div>
-          <Button variant="soft" onClick={toggleDarkMode} >
+          <Button  variant="soft" onClick={toggleDarkMode} >
             {darkMode ? 'Light' : 'Dark'} Mode
           </Button>
         </div>
