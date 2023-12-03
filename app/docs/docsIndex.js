@@ -32,13 +32,11 @@ DOCS_SEO.getMetadata = (pageName)=>{
 
 DOCS_SEO.getNext = (pageName)=>{
     const nextPageConstant = DOCS_SEO[pageName].next;
-    console.log(nextPageConstant)
     return DOCS_SEO[nextPageConstant]
 }
 
 DOCS_SEO.getPrevious = (pageName)=>{
     const nextPageConstant = DOCS_SEO[pageName].previous;
-    console.log(nextPageConstant)
     return DOCS_SEO[nextPageConstant]
 }
 
