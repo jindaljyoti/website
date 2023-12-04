@@ -7,3 +7,22 @@
   @import url("./base.tokens.css");
  
 }
+
+code{
+  padding:16px;
+  border-radius: 4px;
+  margin-bottom:20px;
+  background-color: var(--rad-ui-color-plum-800);
+  color: var(--rad-ui-color-gray-1000);
+  background-color : var(--rad-ui-color-accent-100);
+  display: block;
+  border: 1px solid var(--rad-ui-color-indigo-500);
+  font-size:12px;
+}
+code .string{
+    color: var(--rad-ui-color-violet-900);
+}
+
+code .keyword{
+  color: var(--rad-ui-color-crimson-900);
+}

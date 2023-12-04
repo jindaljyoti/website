@@ -1,4 +1,7 @@
+"use client"
+
 import NavItem from './NavItem.js'
+import { usePathname } from 'next/navigation';
 
 const sections = [
     {
@@ -19,7 +22,11 @@ const sections = [
         ]
     }
 ]
+
+
 const Navigation = () => {
+    // get path from ssr
+    const pathname = usePathname();
 
     return <div>
         <div className='flex-none' style={{ width: "250px" }}>
@@ -28,7 +35,9 @@ const Navigation = () => {
                     <div className='px-2 py-2 font-bold text-md text-gray-1000'>{section.title}</div>
                     <ul>
                         {section.items.map((item, itemKey) => {
-                            return <NavItem item={item} key={itemKey} />
+                            return <li key={itemKey}>
+                                <NavItem item={item} path={pathname} />
+                            </li>
                         })}
                     </ul>
                 </div>
