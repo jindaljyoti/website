@@ -1,5 +1,7 @@
 import { Text, Heading, Link, Separator } from "@kotapi/rad-ui"
 
+import CodeBlock from "./helpers/CodeBlock"
+
 import DOCS_SEO from '@/app/docs/docsIndex';
 
 const LeftArrow = ()=>{
@@ -12,7 +14,7 @@ const RightArrow = ()=>{
 
 const Documentation = ({title="", next=undefined,children}) => {
 
-
+    console.log(next)
     const previous = DOCS_SEO.getPrevious(next?.previous)
 
     const NEXT_PAGE_TITLE = next?.basic_title || "";
@@ -30,10 +32,7 @@ const Documentation = ({title="", next=undefined,children}) => {
             <div>
             {previous && <span className='flex items-center space-x-2'><Link className="flex items-center space-x-2" href={`${previous?.url}`}><LeftArrow/> <span> {previous?.basic_title}</span></Link></span>}
             </div>
-            {next &&
-            <span className='flex items-center space-x-2'><Link className="flex items-center space-x-2" href={`${next?.url}`}><span> {next?.basic_title}</span><RightArrow/> </Link></span>
-            
-            }
+            {next && <span className='flex items-center space-x-2'><Link className="flex items-center space-x-2" href={`${next?.url}`}><span> {next?.basic_title}</span><RightArrow/> </Link></span>}
         </div>
     </div>
 }
@@ -47,12 +46,10 @@ const Section = ({title="",children}) => {
     </div>
 }
 
-const Code = ()=>{
-    return <div>Code</div>
-}
+
 
 Documentation.Section = Section;
-Documentation.Code = Code;
+Documentation.CodeBlock = CodeBlock;
 
 
 export default Documentation;
