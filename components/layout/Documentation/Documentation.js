@@ -14,7 +14,7 @@ const RightArrow = ()=>{
 
 const Documentation = ({title="", next=undefined,children}) => {
 
-    console.log(next)
+
     const previous = DOCS_SEO.getPrevious(next?.previous)
 
     const NEXT_PAGE_TITLE = next?.basic_title || "";

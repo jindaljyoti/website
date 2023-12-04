@@ -25,7 +25,7 @@ export default function RootLayout({children}) {
     }
   }
 
-  console.log(cookiesList,hasCookie)
+  // console.log(cookiesList,hasCookie)
   return (
     <html lang="en">
       <body className={inter.className}>
