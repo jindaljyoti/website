@@ -7,3 +7,15 @@
   @import url("./base.tokens.css");
  
 }
+
+code{
+  padding:24px;
+  background-color: var(--rad-ui-color-gray-100);
+  color: var(--rad-ui-color-gray-950);
+  background-color : var(--rad-ui-color-indigo-50);
+  display: block;
+  border: 1px solid var(--rad-ui-color-indigo-500);
+}
+code .string{
+    color: var(--rad-ui-color-violet-600);
+}
