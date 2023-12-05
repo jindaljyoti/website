@@ -20,10 +20,18 @@ const DOCS_SEO = {
     "USAGE":{
         title:`Usage${POSTFIX}`,
         basic_title:"Usage",
-        next: null,
+        next: "ACCESSIBILITY",
         previous:"INSTALLATION",
         description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
         url:"/docs/usage"
+    },
+    "ACCESSIBILITY":{
+        title:`Accessibility${POSTFIX}`,
+        basic_title:"Accessibility",
+        next: null,
+        previous:"USAGE",
+        description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
+        url:"/docs/accessibility"
     }
 }
 
@@ -37,7 +45,9 @@ DOCS_SEO.getNext = (pageName)=>{
 }
 
 DOCS_SEO.getPrevious = (pageName)=>{
+    console.log(pageName)
     const nextPageConstant = DOCS_SEO[pageName]?.previous || null;
+    console.log(nextPageConstant)
     return DOCS_SEO[nextPageConstant]
 }
 

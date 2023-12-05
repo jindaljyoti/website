@@ -9,7 +9,7 @@ export const metadata = SEO.getMetadata(PAGE_NAME)
 
 
 const Introduction = () => {
-    return <Documentation next={SEO.getNext(PAGE_NAME)} title="Introduction">
+    return <Documentation currentPage={PAGE_NAME} title="Introduction">
         <Documentation.Section title="What is Rad UI?">
             <Text className="mb-2 text-gray-1000 font-light">
                 Welcome to Rad UI, a UI library built around design systems used in web, it is designed to speed up your development process by providing you with a set of components that you can use to build your web app - <strong className='font-bold italic text-gray-1000'>fast</strong>. In less than an hour, you can start to get a feel for the components and how they work.

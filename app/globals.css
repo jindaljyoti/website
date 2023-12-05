@@ -26,3 +26,10 @@ code .string{
 code .keyword{
   color: var(--rad-ui-color-crimson-900);
 }
+code .function,.function-variable{
+  color: var(--rad-ui-color-accent-900);
+}
+
+code .class-name{
+  color: var(--rad-ui-color-accent-900);
+}
