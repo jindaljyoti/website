@@ -49,7 +49,7 @@ const IconContainer = ({ children }) => {
 }
 
 const ToolbarDemo = () => (
-    <div className='border border-gray-500 shadow rounded px-4 py-2 w-full bg-gray-50 text-xs flex space-x-4'>
+    <div className='border border-gray-500 shadow rounded px-4 py-2 w-full text-xs flex space-x-4 bg-gradient-to-r from-gray-100 to-gold-100'>
         <div className='flex items-center space-x-2'>
             <IconContainer >
                 <FontItalic />
