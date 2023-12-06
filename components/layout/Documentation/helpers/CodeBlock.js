@@ -50,9 +50,9 @@ const CodeBlock = ({ children }) => {
 
     code = code.children.map(renderElement);
   return (
-    <div>
+    <pre>
       <code className='language-jsx'>{code}</code>
-    </div>
+    </pre>
   );
 };
 

@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 
 const sections = [
     {
-        title: "Overview",
+        title: "First Steps",
         items: [
             {
                 title: "Introduction",
@@ -18,6 +18,15 @@ const sections = [
             {
                 title: "Usage",
                 path: "/docs/usage"
+            }
+        ]
+    },
+    {
+        title: "Principles",
+        items:[
+            {
+                title:"Accessibility",
+                path:"/docs/accessibility"
             }
         ]
     }
