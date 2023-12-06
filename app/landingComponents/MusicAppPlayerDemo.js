@@ -21,7 +21,7 @@ const MusicBars = ({index})=>{
 const MusicAppPlayerDemo = () => {
     return <div>
          <div style={{maxWidth:"400px"}}>
-         <div className='border border-gray-400 p-4 bg-gray-100 bg-gradient-to-r from-gray-200 to-gray-50 rounded-md shadow'>
+         <div className='border border-gray-400 p-4 bg-gray-100 bg-gradient-to-r from-green-200 to-red-100 rounded-md shadow'>
         <div className='flex justify-between items-center'>
            <div className='text-gray-900'>
            <LeftArrow/>
