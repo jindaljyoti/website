@@ -5,6 +5,8 @@ import { Button, Heading } from "@kotapi/rad-ui"
 import MusicAppPlayerDemo from './landingComponents/MusicAppPlayerDemo'
 import ToolbarDemo from './landingComponents/ToolbarDemo'
 import AddToCartDemo from './landingComponents/AddToCartDemo'
+import YourTeamDemo from './landingComponents/YourTeamDemo'
+import TrafficAnalyticsDemo from './landingComponents/TrafficAnalyticsDemo'
 
 export default function Home() {
   return (
@@ -36,6 +38,14 @@ export default function Home() {
             <ToolbarDemo/>
             <div>
               <AddToCartDemo/>
+            </div>
+            <div className='flex w-full space-x-4'>
+              <div className='flex-1'>
+              <YourTeamDemo/>
+              </div>
+              <div className='flex-1'>
+              <TrafficAnalyticsDemo/>
+              </div>
             </div>
           </div>
           
