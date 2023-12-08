@@ -21,8 +21,6 @@ export default function RootLayout({children,...props}) {
   const cookieStore = cookies()
   const darkModeSsrValue = cookieStore.get('darkMode').value || false
 
-  console.log( cookieStore.get('darkMode').value)
-
   return (
     <html lang="en">
       <body>
