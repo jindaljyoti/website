@@ -19,7 +19,7 @@ export const metadata= {
 export default function RootLayout({children,...props}) {
 
   const cookieStore = cookies()
-  const darkModeSsrValue = cookieStore.get('darkMode').value || false
+  const darkModeSsrValue = cookieStore.get('darkMode')?.value || false
 
   return (
     <html lang="en">
