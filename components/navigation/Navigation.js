@@ -29,6 +29,59 @@ const sections = [
                 path:"/docs/accessibility"
             }
         ]
+    },
+    {
+        title:"Components",
+        items:[
+            {
+                title:"Accordion",
+                path:"/docs/components/accordion"
+            },
+            {
+                title:"Avatar",
+                path:"/docs/components/avatar"
+            },
+            {
+                title:"Checkbox",
+                path:"/docs/components/checkbox"
+            },
+            {
+                title:"Collapsible",
+                path:"/docs/components/collapsible"
+            },
+            {
+                title:"ContextMenu",
+                path:"/docs/components/context-menu"
+            },
+            {
+                title:"Dialog",
+                path:"/docs/components/dialog"
+            },
+            {
+                title:"Dropdown",
+                path:"/docs/components/dropdown"
+            },
+            {
+                title:"Form",
+                path:"/docs/components/form"
+            },
+            {
+                title:"Popover",
+                path:"/docs/components/popover"
+            },
+            {
+                title:"Progress",
+                path:"/docs/components/progress"
+            },
+            {
+                title:"Radio",
+                path:"/docs/components/radio"
+            },
+            {
+                title:"ScrollArea",
+                path:"/docs/components/scroll-area"
+            }
+        ]
     }
 ]
 
@@ -37,8 +90,8 @@ const Navigation = () => {
     // get path from ssr
     const pathname = usePathname();
 
-    return <div>
-        <div className='flex-none' style={{ width: "250px" }}>
+    return <div className='border-box px-1 overflow-y-auto'>
+        <div className='flex-none' style={{ width: "240px", height:"80vh" }}>
             {sections.map((section, i) => {
                 return <div key={i}>
                     <div className='px-2 py-2 font-bold text-md text-gray-1000'>{section.title}</div>

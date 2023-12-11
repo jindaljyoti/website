@@ -40,7 +40,7 @@ const MainLayout = ({ darkModeSsrValue, children }) => {
     <Theme isDark={darkMode} >
       <div className={`min-h-screen ${darkMode ? 'rad-ui-dark-theme bg-black' : 'bg-white'}`} data-accent-color="red">
         {/* Navbar start */}
-        <div className={`px-3 py-2 flex items-center justify-between border-b border-gray-500 sticky top-0 ${darkMode ? 'rad-ui-dark-theme bg-black' : 'bg-white'}`}>
+        <div className={`px-3 py-2 flex items-center justify-between border-b z-10 border-gray-500 sticky top-0 ${darkMode ? 'rad-ui-dark-theme bg-black' : 'bg-white'}`}>
 
           <div className='mr-3 flex space-x-8'>
             <a className='text-gray-1000 flex items-center space-x-2 text-md' href="/">
