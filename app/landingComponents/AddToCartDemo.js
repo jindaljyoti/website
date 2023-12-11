@@ -1,3 +1,4 @@
+"use client"
 import { Text, Heading, Badge, Button } from "@kotapi/rad-ui"
 
 const HeartIcon = () => {

@@ -1,3 +1,5 @@
+"use client"
+
 import { Button, Heading, Text } from "@kotapi/rad-ui"
 
 const LeftArrow = () => {

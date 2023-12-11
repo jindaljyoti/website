@@ -33,3 +33,19 @@ code .function,.function-variable{
 code .class-name{
   color: var(--rad-ui-color-accent-900);
 }
+
+code .tag{
+  color: var(--rad-ui-color-accent-900);
+}
+
+code .attr-name{
+  color: var(--rad-ui-color-red-900);
+}
+
+code .attr-value{
+  color: var(--rad-ui-color-green-900);
+}
+
+code .operator{
+  color: var(--rad-ui-color-purple-900);
+}

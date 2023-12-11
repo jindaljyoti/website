@@ -45,9 +45,7 @@ DOCS_SEO.getNext = (pageName)=>{
 }
 
 DOCS_SEO.getPrevious = (pageName)=>{
-    console.log(pageName)
     const nextPageConstant = DOCS_SEO[pageName]?.previous || null;
-    console.log(nextPageConstant)
     return DOCS_SEO[nextPageConstant]
 }
 
