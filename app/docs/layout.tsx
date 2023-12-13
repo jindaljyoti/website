@@ -1,7 +1,7 @@
 import Navigation from "@/components/navigation/Navigation"
 
 const Layout = ({children}:any)=>{
-
+   
     return (
         <div data-accent-color="blue" className="p-4">
             <div className='flex space-x-2'>

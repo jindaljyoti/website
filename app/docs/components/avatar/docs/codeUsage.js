@@ -3,7 +3,7 @@ const code = {
         code: `import { Avatar } from "@kotapi/rad-ui"
 
 const AvatarExample = () => (
-    <div className='flex space-x-2'>
+    <div style={{ display: 'flex', gap: 20 }}>
         <Avatar src="https://i.pravatar.cc/1000" />
         <Avatar fallback="RU" />
         <Avatar fallback="AA" />
