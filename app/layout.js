@@ -4,7 +4,8 @@ import { Inter } from 'next/font/google'
 import Main from "../components/Main/Main"
 
 import { cookies } from 'next/headers'
-
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 // @import url("./component.styles.css");
 import "./component.styles.css"
 
@@ -27,6 +28,8 @@ export default function RootLayout({children,...props}) {
         <Main darkModeSsrValue={darkModeSsrValue}>
             {children}
         </Main>
+        <Analytics/>
+        <SpeedInsights/>
       </body>
     </html>
   )

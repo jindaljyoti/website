@@ -1,3 +1,5 @@
+"use client"
+
 import {Text, Avatar, Link , Separator} from "@kotapi/rad-ui"
 
 const MenuIcon = ()=>{
