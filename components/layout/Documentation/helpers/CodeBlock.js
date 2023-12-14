@@ -50,8 +50,8 @@ const CodeBlock = ({ children }) => {
 
     code = code.children.map(renderElement);
   return (
-    <pre>
-      <code className='language-jsx'>{code}</code>
+    <pre cl>
+      <code className='language-jsx whitespace-pre-wrap' style={{wordBreak:"break-word"}}>{code}</code>
     </pre>
   );
 };
