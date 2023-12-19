@@ -1,6 +1,7 @@
 import Documentation from "@/components/layout/Documentation/Documentation"
 
-import { Avatar } from "@kotapi/rad-ui"
+
+import Avatar from "@radui/ui/Avatar"
 
 import codeUsage from "./docs/codeUsage"
 
@@ -10,8 +11,8 @@ const AvatarDocs = () => {
             <Documentation.ComponentHero codeUsage={codeUsage}>
                 <div style={{display:"flex",gap:20}}>
                     <Avatar src="https://i.pravatar.cc/1000" />
-                    <Avatar fallback="RU" />
-                    <Avatar fallback="AA" />
+                    <Avatar src={undefined} fallback="RU" />
+                    <Avatar src={null} fallback="AA" />
                 </div>
             </Documentation.ComponentHero>
             <Documentation.ComponentFeatures  >

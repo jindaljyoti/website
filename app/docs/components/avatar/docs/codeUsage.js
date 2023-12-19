@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import { Avatar } from "@kotapi/rad-ui"
+        code: `import Avatar from "@rad-ui/ui/Avatar"
 
 const AvatarExample = () => (
     <div style={{ display: 'flex', gap: 20 }}>

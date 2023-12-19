@@ -7,10 +7,9 @@ import { cookies } from 'next/headers'
 import { Analytics } from '@vercel/analytics/react';
 import GoogleAnalytics from '../components/Analytics/GoogleAnalytics'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-// @import url("./component.styles.css");
-import "./component.styles.css"
 
 
+import "@radui/ui/themes/default.css"
 
 
 export const metadata= {
