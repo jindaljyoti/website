@@ -11,8 +11,8 @@ const AvatarDocs = () => {
             <Documentation.ComponentHero codeUsage={codeUsage}>
                 <div style={{display:"flex",gap:20}}>
                     <Avatar src="https://i.pravatar.cc/1000" />
-                    <Avatar src={undefined} fallback="RU" />
-                    <Avatar src={null} fallback="AA" />
+                    <Avatar fallback="RU" />
+                    <Avatar fallback="AA" />
                 </div>
             </Documentation.ComponentHero>
             <Documentation.ComponentFeatures  >
