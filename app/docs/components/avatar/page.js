@@ -1,11 +1,14 @@
+
 import Documentation from "@/components/layout/Documentation/Documentation"
 
 
 import Avatar from "@radui/ui/Avatar"
+// import {Avatar} from "@kotapi/rad-ui"
 
 import codeUsage from "./docs/codeUsage"
 
 const AvatarDocs = () => {
+
     return <div>
         <Documentation title='Avatar' description={`Avatars are used to represent a user or a brand. They are used in the header, sidebar, and in the chat.`}>
             <Documentation.ComponentHero codeUsage={codeUsage}>

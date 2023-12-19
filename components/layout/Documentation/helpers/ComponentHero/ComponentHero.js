@@ -29,14 +29,13 @@ const initializeTabs = (codeUsage) => {
 
     return tabs
 
-    console.log(tabs)
+
 
 }
 
 
 const ComponentHero = ({ children, codeUsage = {} }) => {
     const [activeTab, setActiveTab] = useState('tab1')
-    console.log(codeUsage)
     const data = initializeTabs(codeUsage)
 
     return <div>

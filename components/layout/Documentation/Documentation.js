@@ -19,6 +19,7 @@ const Documentation = ({ title = "", description = "", currentPage = undefined, 
     const next = DOCS_SEO.getNext(currentPage)
     const NEXT_PAGE_TITLE = next?.basic_title || "";
 
+
     return <div>
         <div>
             <div className='flex items-center space-x-4'>
