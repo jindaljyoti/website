@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "update-rad": "npm update @radui/ui"
   },
   "dependencies": {
     "@kotapi/rad-ui": "^0.0.11",
+    "@radui/ui": "^0.0.6",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
