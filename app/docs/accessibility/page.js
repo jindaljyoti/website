@@ -3,8 +3,6 @@ const PAGE_NAME = 'ACCESSIBILITY'
 import SEO from "../docsIndex"
 export const metadata = SEO.getMetadata(PAGE_NAME)
 
-
-
 import Documentation from "@/components/layout/Documentation/Documentation"
 import { Text, Heading, Link, Code } from "@kotapi/rad-ui"
 

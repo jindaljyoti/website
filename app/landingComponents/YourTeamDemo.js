@@ -1,6 +1,7 @@
 "use client"
 
-import {Text, Avatar, Link , Separator} from "@kotapi/rad-ui"
+import {Text, Link , Separator} from "@kotapi/rad-ui"
+import Avatar from "@radui/ui/Avatar"
 
 const MenuIcon = ()=>{
     return <svg height="18" width="18" viewBox="0 0 24 24">

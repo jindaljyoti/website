@@ -32,7 +32,15 @@ const DOCS_SEO = {
         previous:"USAGE",
         description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
         url:"/docs/accessibility"
-    }
+    },
+    "AVATAR_DOCS":{
+        title:`Avatar Documentation ${POSTFIX}`,
+        basic_title:"Avatar",
+        next: null,
+        previous:"ACCESSIBILITY",
+        description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
+        url:"/docs/components/avatar"
+    },
 }
 
 DOCS_SEO.getMetadata = (pageName)=>{
@@ -45,7 +53,9 @@ DOCS_SEO.getNext = (pageName)=>{
 }
 
 DOCS_SEO.getPrevious = (pageName)=>{
+    console.log(pageName)
     const nextPageConstant = DOCS_SEO[pageName]?.previous || null;
+    console.log( DOCS_SEO[pageName])
     return DOCS_SEO[nextPageConstant]
 }
 
