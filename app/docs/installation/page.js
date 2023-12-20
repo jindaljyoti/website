@@ -24,14 +24,14 @@ const Introduction = () => {
 
             <Text className="mt-4 mb-1 font-medium">Using Yarn</Text>
             <Code>
-                yarn add @kotapi/rad-ui
+                yarn add @radui/ui
             </Code>
 
             {/*  */}
 
             <Text className="mt-4 mb-1 font-medium">Using npm</Text>
             <Code>
-                npm install @kotapi/rad-ui --save
+                npm install @radui/ui --save
             </Code>
         </Documentation.Section>
     </Documentation>

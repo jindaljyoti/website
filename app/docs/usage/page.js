@@ -20,7 +20,7 @@ const Usage = () => {
             </Text>
             <Documentation.CodeBlock>
                 {
-                    `import { Button } from "@kotapi/rad-ui"
+                    `import { Button } from "@radui/ui"
 
 const MyComponent = () => {
     return <Button>Click Me</Button>
