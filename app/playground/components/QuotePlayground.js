@@ -1,5 +1,7 @@
-import { Quote } from "@kotapi/rad-ui"
+
 import ColorLooper from "../helpers/ColorLooper"
+
+import Quote from "@radui/ui/Quote"
 
 const Playground = () => (
     <div >

@@ -3,11 +3,13 @@ import CodeBlock from '../CodeBlock';
 
 import { useState } from 'react'
 
-import { Tabs } from "@kotapi/rad-ui"
+
+
+import Tabs from "@radui/ui/Tabs"
 
 
 
-const TabContainer = ({children}) => {
+const TabContainer = ({ children }) => {
     return <div className='px-2'>
         {children}
     </div>

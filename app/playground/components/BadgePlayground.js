@@ -1,5 +1,7 @@
-import { Badge } from "@kotapi/rad-ui"
+
 import ColorLooper from "../helpers/ColorLooper"
+
+import Badge from "@radui/ui/Badge"
 
 const Playground = () => (
     <div >

@@ -20,7 +20,7 @@ const AvatarDocs = () => {
             </Documentation.ComponentHero>
             <Documentation.ComponentFeatures features={[
                 "Adds a fallback if the image is not available",
-                "Accepts a custom fallback",
+                // "Accepts a custom fallback",
                 "SSR compatible",
             ]} >
 

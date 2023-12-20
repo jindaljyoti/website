@@ -1,5 +1,7 @@
-import { Heading } from "@kotapi/rad-ui"
+
 import ColorLooper from "../helpers/ColorLooper"
+
+import Heading from "@radui/ui/Heading"
 
 const Playground = () => (
     <div >
