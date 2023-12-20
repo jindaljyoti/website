@@ -1,5 +1,8 @@
-import { Text, Em } from "@kotapi/rad-ui"
+
 import ColorLooper from "../helpers/ColorLooper"
+
+import Text from "@radui/ui/Text"
+import Em from "@radui/ui/Em"
 
 const Playground = () => (
     <div >

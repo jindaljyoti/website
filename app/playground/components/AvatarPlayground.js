@@ -1,5 +1,6 @@
-import { Avatar } from "@kotapi/rad-ui"
+
 import ColorLooper from "../helpers/ColorLooper"
+import Avatar from "@radui/ui/Avatar"
 
 const Playground = () => (
     <div >
@@ -8,7 +9,7 @@ const Playground = () => (
             <ColorLooper title="Avatar">
                 <div className='flex space-x-2'>
                     <Avatar fallback="RU"  />
-                    <Avatar src="https://i.scdn.co/image/ab67706c0000da84cad72550aac7122c10823ffe" fallback="An"  />
+                    <Avatar src="https://i.pravatar.cc/64" fallback="AN"  />
                     <Avatar fallback="AB"  />
                     <Avatar fallback="MS"  />
                     <Avatar fallback="CB"  />

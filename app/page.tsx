@@ -13,6 +13,8 @@ import AddToCartDemo from './landingComponents/AddToCartDemo'
 import YourTeamDemo from './landingComponents/YourTeamDemo'
 import TrafficAnalyticsDemo from './landingComponents/TrafficAnalyticsDemo'
 
+
+
 export default function Home() {
   return (
     <div className='min-h-screen'>

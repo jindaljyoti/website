@@ -1,4 +1,8 @@
-import { Text, Heading, Link, Separator, Badge } from "@kotapi/rad-ui"
+import Text from "@radui/ui/Text"
+import Heading from "@radui/ui/Heading"
+import Link from "@radui/ui/Link"
+import Separator from "@radui/ui/Separator"
+import Badge from "@radui/ui/Badge"
 
 import CodeBlock from "./helpers/CodeBlock"
 import ComponentHero from "./helpers/ComponentHero/ComponentHero"
@@ -18,6 +22,7 @@ const Documentation = ({ title = "", description = "", currentPage = undefined, 
     const previous = DOCS_SEO.getPrevious(currentPage)
     const next = DOCS_SEO.getNext(currentPage)
     const NEXT_PAGE_TITLE = next?.basic_title || "";
+
 
     return <div>
         <div>
