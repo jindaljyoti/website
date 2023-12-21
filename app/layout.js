@@ -12,12 +12,12 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import "@radui/ui/themes/default.css"
 
 
-export const metadata= {
+export const metadata = {
   title: 'Rad UI | Modern React UI Library for accessible and fast web applications',
   description: 'Rad UI is a modern React UI Library for accessible and fast web applications',
 }
 
-export default function RootLayout({children,...props}) {
+export default function RootLayout({ children, ...props }) {
 
   const cookieStore = cookies()
   const darkModeSsrValue = cookieStore.get('darkMode')?.value || false
@@ -26,11 +26,11 @@ export default function RootLayout({children,...props}) {
     <html lang="en">
       <body>
         <Main darkModeSsrValue={darkModeSsrValue}>
-            {children}
+          {children}
         </Main>
-        <Analytics/>
-        <SpeedInsights/>
-        <GoogleAnalytics/>
+        <Analytics />
+        <SpeedInsights />
+        <GoogleAnalytics />
       </body>
     </html>
   )

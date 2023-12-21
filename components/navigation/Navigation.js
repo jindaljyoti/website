@@ -64,6 +64,10 @@ const sections = [
             {
                 title: "Em",
                 path: "/docs/components/em"
+            },
+            {
+                title: "Separator",
+                path: "/docs/components/separator"
             }
             // {
             //     title:"Checkbox",
