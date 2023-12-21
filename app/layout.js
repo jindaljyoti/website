@@ -1,4 +1,3 @@
-import './globals.css'
 
 import { Inter } from 'next/font/google'
 import Main from "../components/Main/Main"
@@ -9,6 +8,11 @@ import GoogleAnalytics from '../components/Analytics/GoogleAnalytics'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
+
+import './globals.css'
+
+// This is where we get our design system tokens from
+import "./base.tokens.css" // this needs to be replaced with base css color tokens
 import "@radui/ui/themes/default.css"
 
 
