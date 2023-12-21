@@ -23,64 +23,84 @@ const sections = [
     },
     {
         title: "Principles",
-        items:[
+        items: [
             {
-                title:"Accessibility",
-                path:"/docs/accessibility"
+                title: "Accessibility",
+                path: "/docs/accessibility"
             }
         ]
     },
     {
-        title:"Components",
-        items:[
+        title: "Components",
+        items: [
+            // {
+            //     title:"Accordion",
+            //     path:"/docs/components/accordion"
+            // },
             {
-                title:"Accordion",
-                path:"/docs/components/accordion"
+                title: "Avatar",
+                path: "/docs/components/avatar"
             },
             {
-                title:"Avatar",
-                path:"/docs/components/avatar"
+                title: "Badge",
+                path: "/docs/components/badge"
             },
             {
-                title:"Checkbox",
-                path:"/docs/components/checkbox"
+                title: "Button",
+                path: "/docs/components/button"
             },
             {
-                title:"Collapsible",
-                path:"/docs/components/collapsible"
+                title: "BlockQuote",
+                path: "/docs/components/blockquote"
             },
             {
-                title:"ContextMenu",
-                path:"/docs/components/context-menu"
-            },
-            {
-                title:"Dialog",
-                path:"/docs/components/dialog"
-            },
-            {
-                title:"Dropdown",
-                path:"/docs/components/dropdown"
-            },
-            {
-                title:"Form",
-                path:"/docs/components/form"
-            },
-            {
-                title:"Popover",
-                path:"/docs/components/popover"
-            },
-            {
-                title:"Progress",
-                path:"/docs/components/progress"
-            },
-            {
-                title:"Radio",
-                path:"/docs/components/radio"
-            },
-            {
-                title:"ScrollArea",
-                path:"/docs/components/scroll-area"
+                title: "Code",
+                path: "/docs/components/code"
             }
+            // {
+            //     title:"Checkbox",
+            //     path:"/docs/components/checkbox"
+            // },
+            // {
+            //     title:"Collapsible",
+            //     path:"/docs/components/collapsible"
+            // },
+            // {
+            //     title:"ContextMenu",
+            //     path:"/docs/components/context-menu"
+            // },
+            // {
+            //     title:"Dialog",
+            //     path:"/docs/components/dialog"
+            // },
+            // {
+            //     title: "Dropdown",
+            //     path: "/docs/components/dropdown"
+            // },
+            // {
+            //     title:"Form",
+            //     path:"/docs/components/form"
+            // },
+            // {
+            //     title:"Popover",
+            //     path:"/docs/components/popover"
+            // },
+            // {
+            //     title:"Progress",
+            //     path:"/docs/components/progress"
+            // },
+            // {
+            //     title:"Radio",
+            //     path:"/docs/components/radio"
+            // },
+            // {
+            //     title:"ScrollArea",
+            //     path:"/docs/components/scroll-area"
+            // }
+            // {
+            //     title: "Tooltip",
+            //     path: "/docs/components/tooltip"
+            // }
         ]
     }
 ]
@@ -91,7 +111,7 @@ const Navigation = () => {
     const pathname = usePathname();
 
     return <div className='border-box px-1 overflow-y-auto hidden lg:block'>
-        <div className='flex-none' style={{ width: "240px", height:"80vh" }}>
+        <div className='flex-none' style={{ width: "240px", height: "80vh" }}>
             {sections.map((section, i) => {
                 return <div key={i}>
                     <div className='px-2 py-2 font-bold text-md text-gray-1000'>{section.title}</div>

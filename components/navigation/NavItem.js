@@ -17,7 +17,7 @@ const NavItem = ({ item, path }) => {
         router.push(item?.path)
     }
 
-    return <a className={`${baseItemClasses} ${activeClasses}`} onClick={handleClick}>{item?.title}</a>
+    return <a className={`${baseItemClasses} ${activeClasses}`} onClick={handleClick} href={item?.path} >{item?.title}</a>
 
 }
 
