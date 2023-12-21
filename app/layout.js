@@ -9,11 +9,11 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 
+/** Don't change the order or all hell breaks loose */
 import './globals.css'
+import "./base.tokens.css";
+import "@radui/ui/themes/default.css";
 
-// This is where we get our design system tokens from
-import "./base.tokens.css" // this needs to be replaced with base css color tokens
-import "@radui/ui/themes/default.css"
 
 
 export const metadata = {
