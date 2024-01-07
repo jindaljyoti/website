@@ -6,7 +6,7 @@ import Link from "@radui/ui/Link"
 import Code from "@radui/ui/Code"
 
 
-import SEO from "../docsIndex"
+import SEO from "../../docsIndex"
 export const metadata = SEO.getMetadata(PAGE_NAME)
 
 import Documentation from "@/components/layout/Documentation/Documentation"

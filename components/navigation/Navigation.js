@@ -9,15 +9,15 @@ const sections = [
         items: [
             {
                 title: "Introduction",
-                path: "/docs/introduction"
+                path: "/docs/first-steps//introduction"
             },
             {
                 title: "Installation",
-                path: "/docs/installation"
+                path: "/docs/first-steps//installation"
             },
             {
                 title: "Usage",
-                path: "/docs/usage"
+                path: "/docs/first-steps//usage"
             }
         ]
     },
@@ -26,7 +26,7 @@ const sections = [
         items: [
             {
                 title: "Accessibility",
-                path: "/docs/accessibility"
+                path: "/docs/principles/accessibility"
             }
         ]
     },
@@ -113,6 +113,15 @@ const sections = [
             //     title: "Tooltip",
             //     path: "/docs/components/tooltip"
             // }
+        ]
+    },
+    {
+        title: "Contributing",
+        items: [
+            {
+                title: "Before you start",
+                path: "/docs/before-you-start"
+            }
         ]
     }
 ]

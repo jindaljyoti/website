@@ -7,7 +7,7 @@ import Code from "@radui/ui/Code"
 
 
 const PAGE_NAME = 'INSTALLATION'
-import SEO from "../docsIndex"
+import SEO from "../../docsIndex"
 export const metadata = SEO.getMetadata(PAGE_NAME)
 
 
