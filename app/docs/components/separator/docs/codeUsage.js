@@ -1,18 +1,20 @@
 const code = {
     javascript: {
-        code: `import Em from "@rad-ui/ui/Em"
+        code: `import Separator from "@rad-ui/ui/Separator"
 
-const EmExample = () => (
+const SeparatorExample = () => (
     <div>
-        <Text>
-            I have a dream of a scene between the green hills.
-            <br />
-            <Em>Clouds</Em> pull away and the sunlight's revealed.
-            <br />
-            People don't talk about keeping it <Em>real</Em>.
-            <br />
-            <Em>It's understood</Em> that they actually will.
-        </Text>
+        <div>
+            <Text>Welcome to Rad UI</Text>
+        </div>
+        <Separator />
+        <div style={{ height: "20px", display:"flex" }}>
+            <Text>Modern</Text>
+            <Separator orientation="vertical" />
+            <Text>Accessible</Text>
+            <Separator orientation="vertical" />
+            <Text>Performant</Text>
+        </div>
     </div>
 )`
     },

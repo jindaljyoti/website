@@ -11,8 +11,8 @@ import codeUsage from "./docs/codeUsage"
 
 const AvatarDocs = () => {
     return <div>
-        <Documentation currentPage={PAGE_NAME} title='Em' description={`
-           Em is used to emphasize text.
+        <Documentation currentPage={PAGE_NAME} title='Separator' description={`
+              Separator is used to separate content.
         `}>
             <Documentation.ComponentHero codeUsage={codeUsage}>
                 <div className='text-gray-50 font-normal p-5 space-y-1'>

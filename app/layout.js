@@ -8,10 +8,9 @@ import GoogleAnalytics from '../components/Analytics/GoogleAnalytics'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
-
 /** Don't change the order or all hell breaks loose */
-import './globals.css'
 import "./base.tokens.css";
+import './globals.css'
 import "@radui/ui/themes/default.css";
 
 

@@ -7,7 +7,7 @@ import Text from "@radui/ui/Text"
 import Heading from "@radui/ui/Heading"
 import Link from "@radui/ui/Link"
 
-import SEO from "../docsIndex"
+import SEO from "../../docsIndex"
 export const metadata = SEO.getMetadata(PAGE_NAME)
 
 
