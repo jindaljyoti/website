@@ -91,6 +91,9 @@ const MainLayout = ({ darkModeSsrValue, children }) => {
 
         </div>
         {/* Navbar end */}
+        <div className='px-3 py-2'>
+          {children}
+        </div>
       </div>
 
 
