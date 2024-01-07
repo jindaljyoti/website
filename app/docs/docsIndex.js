@@ -1,61 +1,61 @@
 const POSTFIX = " | Rad UI";
 
 const DOCS_SEO = {
-    "INTRODUCTION":{
-        title:`Introduction${POSTFIX}`,
-        basic_title:"Introduction",
-        next:"INSTALLATION",
-        previous:null,
+    "INTRODUCTION": {
+        title: `Introduction${POSTFIX}`,
+        basic_title: "Introduction",
+        next: "INSTALLATION",
+        previous: null,
         description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
-        url:"/docs/introduction"
+        url: "/docs/introduction"
     },
-    "INSTALLATION":{
-        title:`Installation${POSTFIX}`,
-        basic_title:"Installation",
-        next:"USAGE",
-        previous:"INTRODUCTION",
+    "INSTALLATION": {
+        title: `Installation${POSTFIX}`,
+        basic_title: "Installation",
+        next: "USAGE",
+        previous: "INTRODUCTION",
         description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
-        url:"/docs/installation"
+        url: "/docs/installation"
     },
-    "USAGE":{
-        title:`Usage${POSTFIX}`,
-        basic_title:"Usage",
+    "USAGE": {
+        title: `Usage${POSTFIX}`,
+        basic_title: "Usage",
         next: "ACCESSIBILITY",
-        previous:"INSTALLATION",
+        previous: "INSTALLATION",
         description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
-        url:"/docs/usage"
+        url: "/docs/usage"
     },
-    "ACCESSIBILITY":{
-        title:`Accessibility${POSTFIX}`,
-        basic_title:"Accessibility",
+    "ACCESSIBILITY": {
+        title: `Accessibility${POSTFIX}`,
+        basic_title: "Accessibility",
         next: null,
-        previous:"USAGE",
+        previous: "USAGE",
         description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
-        url:"/docs/accessibility"
+        url: "/docs/accessibility"
     },
-    "AVATAR_DOCS":{
-        title:`Avatar Documentation ${POSTFIX}`,
-        basic_title:"Avatar",
+    "AVATAR_DOCS": {
+        title: `Avatar Documentation ${POSTFIX}`,
+        basic_title: "Avatar",
         next: null,
-        previous:"ACCESSIBILITY",
+        previous: "ACCESSIBILITY",
         description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
-        url:"/docs/components/avatar"
+        url: "/docs/components/avatar"
     },
 }
 
-DOCS_SEO.getMetadata = (pageName)=>{
+DOCS_SEO.getMetadata = (pageName) => {
     return DOCS_SEO[pageName]
 }
 
-DOCS_SEO.getNext = (pageName)=>{
+DOCS_SEO.getNext = (pageName) => {
     const nextPageConstant = DOCS_SEO[pageName]?.next || null;
     return DOCS_SEO[nextPageConstant]
 }
 
-DOCS_SEO.getPrevious = (pageName)=>{
-    console.log(pageName)
+DOCS_SEO.getPrevious = (pageName) => {
+
     const nextPageConstant = DOCS_SEO[pageName]?.previous || null;
-    console.log( DOCS_SEO[pageName])
+
     return DOCS_SEO[nextPageConstant]
 }
 

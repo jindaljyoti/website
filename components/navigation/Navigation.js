@@ -68,7 +68,7 @@ const sections = [
             {
                 title: "Separator",
                 path: "/docs/components/separator"
-            }
+            },
             // {
             //     title:"Checkbox",
             //     path:"/docs/components/checkbox"
@@ -120,7 +120,7 @@ const sections = [
         items: [
             {
                 title: "Before you start",
-                path: "/docs/before-you-start"
+                path: "/docs/contributing/before-you-start"
             }
         ]
     }

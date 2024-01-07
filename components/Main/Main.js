@@ -1,16 +1,8 @@
 "use client"
 import Theme from "@/components/layout/Theme"
-
 import { useEffect, useState } from 'react'
-
-
-
-import Button from "@radui/ui/Button"
-
 import { parseCookies, setCookie, destroyCookie } from 'nookies'
-// import { cookies } from 'next/headers'
-
-// import { getCookie } from "cookies-next";
+import Button from "@radui/ui/Button"
 
 
 const MainLayout = ({ darkModeSsrValue, children }) => {
