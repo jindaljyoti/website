@@ -1,13 +1,11 @@
 const code = {
     javascript: {
-        code: `import Avatar from "@rad-ui/ui/Avatar"
+        code: `import Tooltip from "@rad-ui/ui/Tooltip"
 
-const AvatarExample = () => (
-    <div style={{ display: 'flex', gap: 20 }}>
-        <Avatar src="https://i.pravatar.cc/1000" />
-        <Avatar fallback="RU" />
-        <Avatar fallback="AA" />
-    </div>
+const ToolTipExample = () => (
+    <Tooltip content="Tooltip content">
+        Hello Tooltip. Hover Me!
+    </Tooltip>
 )`
     },
     css: {
