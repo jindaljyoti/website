@@ -9,15 +9,15 @@ const sections = [
         items: [
             {
                 title: "Introduction",
-                path: "/docs/first-steps//introduction"
+                path: "/docs/first-steps/introduction"
             },
             {
                 title: "Installation",
-                path: "/docs/first-steps//installation"
+                path: "/docs/first-steps/installation"
             },
             {
                 title: "Usage",
-                path: "/docs/first-steps//usage"
+                path: "/docs/first-steps/usage"
             }
         ]
     },
@@ -52,6 +52,10 @@ const sections = [
             {
                 title: "BlockQuote",
                 path: "/docs/components/blockquote"
+            },
+            {
+                title: "Card",
+                path: "/docs/components/card"
             },
             {
                 title: "Code",
@@ -109,10 +113,10 @@ const sections = [
             //     title:"ScrollArea",
             //     path:"/docs/components/scroll-area"
             // }
-            // {
-            //     title: "Tooltip",
-            //     path: "/docs/components/tooltip"
-            // }
+            {
+                title: "Tooltip",
+                path: "/docs/components/tooltip"
+            }
         ]
     },
     {
