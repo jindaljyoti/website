@@ -3,7 +3,7 @@ import radUiPreset from "@radui/ui/themes/tailwind-presets/default.js"
 
 const config: Config = {
   presets:[
-    radUiPreset
+    require("@radui/ui/themes/tailwind-presets/default.js")
   ],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,10 +12,11 @@ const config: Config = {
   ],
  
   theme: {
-    colors:{
-      white: "#fff",
-      black: "#000",
-    },
+    // colors:{
+    //   // white: "#fff",
+    //   // black: "#000",
+    //   // transparent: "transparent",
+    // },
     extend: {
      
       backgroundImage: {
