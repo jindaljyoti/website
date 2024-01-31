@@ -1,18 +1,24 @@
 import type { Config } from "tailwindcss";
-
-import radUiColors from "./base.tokens";
+import radUiPreset from "@radui/ui/themes/tailwind-presets/default.js"
 
 const config: Config = {
+  presets:[
+    require("@radui/ui/themes/tailwind-presets/default.js")
+  ],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+ 
   theme: {
+    // colors:{
+    //   // white: "#fff",
+    //   // black: "#000",
+    //   // transparent: "transparent",
+    // },
     extend: {
-      colors: {
-        ...radUiColors,
-      },
+     
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
