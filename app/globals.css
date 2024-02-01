@@ -8,7 +8,6 @@
 code {
   padding: 16px;
   border-radius: 4px;
-  margin-bottom: 20px;
   background-color: var(--rad-ui-color-plum-800);
   color: var(--rad-ui-color-gray-1000);
   background-color: var(--rad-ui-color-accent-100);
@@ -52,4 +51,16 @@ code .attr-value {
 
 code .operator {
   color: var(--rad-ui-color-purple-900);
+}
+
+code .comment {
+  color: var(--rad-ui-color-gray-800);
+}
+
+code .property {
+  color: var(--rad-ui-color-red-800);
+}
+
+code .selector {
+  color: var(--rad-ui-color-accent-800);
 }

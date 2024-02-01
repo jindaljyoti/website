@@ -25,8 +25,8 @@ const renderElement = (element) => {
   };
 
 
-const CodeBlock = ({ children }) => {
-  let code = refractor.highlight(children, 'jsx');
+const CodeBlock = ({ children, language="jsx" }) => {
+  let code = refractor.highlight(children, language);
  
   const renderElement = (element) => {
     if (element.type === 'element') {
@@ -51,7 +51,7 @@ const CodeBlock = ({ children }) => {
     code = code.children.map(renderElement);
   return (
     <pre cl>
-      <code className='language-jsx whitespace-pre-wrap' style={{wordBreak:"break-word"}}>{code}</code>
+      <code className={`language-${language} whitespace-pre-wrap`} style={{wordBreak:"break-word"}}>{code}</code>
     </pre>
   );
 };
