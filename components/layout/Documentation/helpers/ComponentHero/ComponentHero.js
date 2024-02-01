@@ -20,11 +20,12 @@ const initializeTabs = (codeUsage) => {
 
     for (const key in codeUsage) {
         if (Object.hasOwnProperty.call(codeUsage, key)) {
+
             const element = codeUsage[key];
             tabs.push({
                 label: key,
                 value: key,
-                content: <CodeBlock>{codeUsage[key]?.code}</CodeBlock>,
+                content: <CodeBlock language={key} >{codeUsage[key]?.code}</CodeBlock>,
             })
         }
     }

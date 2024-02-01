@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import radUiPreset from "@radui/ui/themes/tailwind-presets/default.js"
 
 const config: Config = {
   presets:[

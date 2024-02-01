@@ -26,9 +26,6 @@ const Introduction = () => {
             <Code>
                 yarn add @radui/ui
             </Code>
-
-            {/*  */}
-
             <Text className="mt-4 mb-1 font-medium">Using npm</Text>
             <Code>
                 npm install @radui/ui --save
