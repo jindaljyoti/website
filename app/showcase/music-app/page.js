@@ -1,5 +1,5 @@
 import MusicSidebar from './helpers/MusicSidebar'
-
+import MusicPlayer from './helpers/MusicPlayer'
 
 
 // sections
@@ -9,7 +9,7 @@ const MusicAppPage = () => {
     return <div >
 
 
-        <div className='flex h-full'>
+        <div className='flex h-ful'>
             {/* Sidebar */}
             <MusicSidebar/>
 
@@ -24,9 +24,10 @@ const MusicAppPage = () => {
                     </div>
                 </div>
             </div>
+            
         </div>
 
-
+        <MusicPlayer/>
     </div>
 }
 

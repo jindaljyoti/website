@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+/** Don't change the order or all hell breaks loose */
+@import "@radui/ui/themes/default.css";
 
 
 code {
@@ -63,4 +65,25 @@ code .property {
 
 code .selector {
   color: var(--rad-ui-color-accent-800);
+}
+
+
+.background-animate {
+  background-size: 400%;
+
+
+
+  animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
 }
