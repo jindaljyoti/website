@@ -66,7 +66,7 @@ const MainLayout = ({ darkModeSsrValue, children }) => {
                 <a className='text-gray-950 hover:text-gray-1000' href="/docs/first-steps/introduction">Docs</a>
               </li>
               <li>
-                <a className='text-gray-950 hover:text-gray-1000' href="/showcase">Showcase</a>
+                <a className='text-gray-950 hover:text-gray-1000' href="/showcase/music-app">Showcase</a>
               </li>
             </ul>
           </div>
