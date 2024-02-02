@@ -9,7 +9,7 @@ import Badge from "@radui/ui/Badge";
 import RightArrow from "@/icons/RightArrow";
 
 
-const InteractiveAlbums: React.FC = () => {
+const InteractiveAlbums: any = () => {
     const [indexHovered, setIndexHovered] = React.useState<number | null>(null)
 
 
@@ -30,7 +30,7 @@ const InteractiveAlbums: React.FC = () => {
     </>
 }
 
-const PlaylistHero: React.FC<PlaylistHeroProps> = () => {
+const PlaylistHero: any = () => {
 
     const playlist = {
         title: 'The Summer Playlist',

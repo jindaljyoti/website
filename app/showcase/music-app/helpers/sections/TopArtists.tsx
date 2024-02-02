@@ -56,7 +56,7 @@ const artistsData = [
 ]
 
 
-const Artist: React.FC = ({ artist }) => {
+const Artist: any = ({ artist }: any) => {
     const DIMENSIONS = 160
     return (
         <div className='cursor-pointer'>

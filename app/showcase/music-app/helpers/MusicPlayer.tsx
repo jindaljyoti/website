@@ -18,7 +18,7 @@ const ArtistBox: React.FC = () => {
 }
 
 
-const IconContainerSmall: React.FC = ({ children }) => {
+const IconContainerSmall: any = ({ children }: any) => {
     return (
         <div className='text-gray-1000 hover:text-purple-900 cursor-pointer' style={{ height: "18px", width: "18px" }}>
             {children}
