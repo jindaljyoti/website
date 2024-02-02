@@ -55,15 +55,18 @@ const MainLayout = ({ darkModeSsrValue, children }) => {
     <Theme isDark={darkMode} >
       <div className={`min-h-screen flex flex-col ${darkMode ? 'rad-ui-dark-theme bg-black' : 'bg-white'}`} data-accent-color="red">
         {/* Navbar start */}
-        <div className={`px-3 py-2 flex items-center justify-between border-b z-10 border-gray-500 sticky z-20 top-0 ${darkMode ? 'rad-ui-dark-theme bg-black' : 'bg-white'}`}>
+        <div className={`px-3 py-2 flex items-center justify-between border-b border-gray-500 sticky z-20 top-0 ${darkMode ? 'rad-ui-dark-theme bg-black' : 'bg-white'}`}>
 
           <div className='mr-3 flex space-x-8'>
             <a className='text-gray-1000 flex items-center space-x-2 text-md' href="/">
               <RadUILogo />
             </a>
-            <ul className='text-sm flex items-center'>
+            <ul className='text-sm flex items-center space-x-4'>
               <li>
                 <a className='text-gray-950 hover:text-gray-1000' href="/docs/first-steps/introduction">Docs</a>
+              </li>
+              <li>
+                <a className='text-gray-950 hover:text-gray-1000' href="/showcase/music-app">Showcase</a>
               </li>
             </ul>
           </div>

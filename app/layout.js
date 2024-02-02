@@ -8,11 +8,7 @@ import GoogleAnalytics from '../components/Analytics/GoogleAnalytics'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
-/** Don't change the order or all hell breaks loose */
-import './globals.css'
-import "@radui/ui/themes/default.css";
-
-
+import './globals.scss';
 
 export const metadata = {
   title: 'Rad UI | Modern React UI Library for accessible and fast web applications',
