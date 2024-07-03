@@ -45,22 +45,11 @@ const Documentation = ({ title = "", description = "", currentPage = undefined, 
     </div>
 }
 
-const DocsTable = ({ children }) => {
+const DocsTable = ({ children , columns=[], data=[]}) => {
 
-    const columns = [
-        {name: 'Name', key: 'name'},
-        {name: 'Age', key: 'age'},
-    ];
-
-    const data = [
-        {name: 'John Doe', age: 25, key: '1'},
-        {name: 'Jane Doe', age: 24, key: '2'},
-        {name: 'John Smith', age: 30, key: '3'},
-        {name: 'Jane Smith', age: 29, key: '4'},
-    ];
-
+   
     return <div className='mb-20'>
-        <Heading as="h6" className="mb-4">API</Heading>
+        <Heading as="h6" className="mb-4">API Documentation</Heading>
         <Table columns={columns} data={data} >
         {children}
     </Table>
