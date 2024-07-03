@@ -26,4 +26,4 @@ const CalloutDocs = () => {
     </div>
 }
 
-export default AvatarDocs;
+export default CalloutDocs;
