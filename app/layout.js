@@ -7,7 +7,8 @@ import { Analytics } from '@vercel/analytics/react';
 import GoogleAnalytics from '../components/Analytics/GoogleAnalytics'
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
-
+/** Don't change the order or all hell breaks loose */
+import "@radui/ui/themes/default.css";
 import './globals.scss';
 
 export const metadata = {
