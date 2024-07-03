@@ -9,6 +9,19 @@ export const metadata = SEO.getMetadata(PAGE_NAME)
 import codeUsage from "./docs/codeUsage"
 
 const AvatarDocs = () => {
+
+    const columns = [
+        {name: 'Prop', key: 'prop'},
+        {name: 'Type', key: 'type'},
+        {name: 'Default', key: 'default'},
+    ];
+
+    const data = [
+        {prop: 'src', type: 'string', default: 'null'},
+        {prop: 'fallback', type: 'string', default: 'null'},
+    ];
+
+
     return <div>
         <Documentation currentPage={PAGE_NAME} title='Avatar' description={`Avatars are used to represent a user or a brand. They are used in the header, sidebar, and in the chat.`}>
             <Documentation.ComponentHero codeUsage={codeUsage}>
@@ -23,8 +36,10 @@ const AvatarDocs = () => {
                 // "Accepts a custom fallback",
                 "SSR compatible",
             ]} >
-
             </Documentation.ComponentFeatures>
+            <Documentation.Table columns={columns} data={data}>
+
+            </Documentation.Table>
         </Documentation>
     </div>
 }

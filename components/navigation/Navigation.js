@@ -33,10 +33,10 @@ const sections = [
     {
         title: "Components",
         items: [
-            // {
-            //     title:"Accordion",
-            //     path:"/docs/components/accordion"
-            // },
+            {
+                title:"Accordion",
+                path:"/docs/components/accordion"
+            },
             {
                 title: "Avatar",
                 path: "/docs/components/avatar"

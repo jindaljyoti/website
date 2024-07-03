@@ -37,7 +37,7 @@ const DOCS_SEO = {
         title: `Avatar Documentation ${POSTFIX}`,
         basic_title: "Avatar",
         next: null,
-        previous: "ACCESSIBILITY",
+        previous: null,
         description: `It's super easy to get started with Rad UI. You can install it using npm or yarn.`,
         url: "/docs/components/avatar"
     },
