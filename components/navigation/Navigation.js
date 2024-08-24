@@ -1,5 +1,6 @@
 "use client"
 
+import path from 'path';
 import NavItem from './NavItem.js'
 import { usePathname } from 'next/navigation';
 
@@ -113,6 +114,14 @@ const sections = [
             //     title:"ScrollArea",
             //     path:"/docs/components/scroll-area"
             // }
+            {
+                title: "Toggle",
+                path : "/docs/components/toggle"
+            },
+            {
+                title: "ToggleGroup",
+                path: "/docs/components/toggle-group"
+            },
             {
                 title: "Tooltip",
                 path: "/docs/components/tooltip"
