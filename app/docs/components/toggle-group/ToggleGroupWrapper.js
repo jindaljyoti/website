@@ -28,9 +28,6 @@ const items = [
 ];
 
 const ToggleGroupWrapper = ()=>{
-
-    
-
     const handleChange = (newPressed)=>{
         console.log(newPressed)
     }
@@ -39,9 +36,10 @@ const ToggleGroupWrapper = ()=>{
        <ToggleGroup
                 defaultPressed={false}
                 onChange={handleChange}
+                type="multiple"
                 items = {items}
             >
-                </ToggleGroup>
+        </ToggleGroup>
     </div>
 }
 
