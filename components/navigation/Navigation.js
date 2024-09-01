@@ -68,13 +68,18 @@ const sections = [
                 path: "/docs/components/code"
             },
             {
+                title: "Em",
+                path: "/docs/components/em"
+            },
+            {
                 title: "Heading",
                 path: "/docs/components/heading"
             },
             {
-                title: "Em",
-                path: "/docs/components/em"
+                title: "Kbd",
+                path: "/docs/components/kbd"
             },
+           
             {
                 title: "Separator",
                 path: "/docs/components/separator"
