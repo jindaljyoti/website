@@ -1,20 +1,27 @@
 const code = {
     javascript: {
-        code: `import Card from "@rad-ui/ui/Card"
-        
-const ButtonExample = () => (
-    <Card>
-        Hello Card content
-    </Card>
-)`
-    },
+        code: `<Callout color="red">
+    <div className="flex items-start">
+        <Arrow/>
+        <div className="ml-2">
+            <Text className="font-bold">Error</Text>
+            <Text>Something went wrong. Please try again later.</Text>
+        </div>
+    </div>
+</Callout>
+`},
     scss: {
-        code: `.rad-ui-card{
-    border: 1px solid var(--rad-ui-color-gray-400);
-    padding: 12px;
-    border-radius: 4px;
-    box-shadow: 1px 1px 4px 1px var(--rad-ui-color-gray-200);
-}`
+        code: `.rad-ui-callout {
+    padding:16px;
+    border-radius:8px;
+     background-color: var(--rad-ui-color-accent-200);
+     color: var(--rad-ui-color-accent-950);
+     display: flex;
+     align-items: center;
+     font-weight: 300;
+     font-size: 14px;
+     gap:8px;
+ }`
     },
 }
 

@@ -50,14 +50,19 @@ const sections = [
                 title: "Button",
                 path: "/docs/components/button"
             },
-            {
+            {   
                 title: "BlockQuote",
                 path: "/docs/components/blockquote"
+            },
+            {
+                title: "Callout",
+                path: "/docs/components/callout"
             },
             {
                 title: "Card",
                 path: "/docs/components/card"
             },
+
             {
                 title: "Code",
                 path: "/docs/components/code"
