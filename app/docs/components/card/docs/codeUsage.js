@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import Card from "@rad-ui/ui/Card"
+        code: `import Card from "@radui/ui/Card"
         
 const ButtonExample = () => (
     <Card>

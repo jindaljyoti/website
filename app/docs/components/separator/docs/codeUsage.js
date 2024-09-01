@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import Separator from "@rad-ui/ui/Separator"
+        code: `import Separator from "@radui/ui/Separator"
 
 const SeparatorExample = () => (
     <div>

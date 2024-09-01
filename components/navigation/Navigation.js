@@ -36,7 +36,8 @@ const sections = [
         items: [
             {
                 title:"Accordion",
-                path:"/docs/components/accordion"
+                path:"/docs/components/accordion",
+                is_new:true
             },
             {
                 title: "Avatar",
@@ -56,7 +57,8 @@ const sections = [
             },
             {
                 title: "Callout",
-                path: "/docs/components/callout"
+                path: "/docs/components/callout",
+                is_new:true
             },
             {
                 title: "Card",
@@ -77,7 +79,13 @@ const sections = [
             },
             {
                 title: "Kbd",
-                path: "/docs/components/kbd"
+                path: "/docs/components/kbd",
+                is_new:true
+            },
+            {
+                title: "Progress",
+                path: "/docs/components/progress",
+                is_new:true
             },
            
             {
@@ -126,11 +134,13 @@ const sections = [
             // }
             {
                 title: "Toggle",
-                path : "/docs/components/toggle"
+                path : "/docs/components/toggle",
+                is_new:true
             },
             {
                 title: "ToggleGroup",
-                path: "/docs/components/toggle-group"
+                path: "/docs/components/toggle-group",
+                is_new:true
             },
             {
                 title: "Tooltip",

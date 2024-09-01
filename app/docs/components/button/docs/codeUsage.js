@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import Button from "@rad-ui/ui/Button"
+        code: `import Button from "@radui/ui/Button"
 
 const ButtonExample = () => (
     <div>

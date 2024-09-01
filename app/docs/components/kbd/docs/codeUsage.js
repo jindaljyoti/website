@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import Kbd from "@rad-ui/ui/Kbd"
+        code: `import Kbd from "@radui/ui/Kbd"
 
 const KbdExample = () => {
     return <Kbd>Ctrl + C</Kbd>
