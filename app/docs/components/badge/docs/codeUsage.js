@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import Badge from "@rad-ui/ui/Badge"
+        code: `import Badge from "@radui/ui/Badge"
 
 const BadgeExample = () => (
     <div>

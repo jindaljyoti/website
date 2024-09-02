@@ -36,7 +36,8 @@ const sections = [
         items: [
             {
                 title:"Accordion",
-                path:"/docs/components/accordion"
+                path:"/docs/components/accordion",
+                is_new:true
             },
             {
                 title: "Avatar",
@@ -50,26 +51,43 @@ const sections = [
                 title: "Button",
                 path: "/docs/components/button"
             },
-            {
+            {   
                 title: "BlockQuote",
                 path: "/docs/components/blockquote"
+            },
+            {
+                title: "Callout",
+                path: "/docs/components/callout",
+                is_new:true
             },
             {
                 title: "Card",
                 path: "/docs/components/card"
             },
+
             {
                 title: "Code",
                 path: "/docs/components/code"
+            },
+            {
+                title: "Em",
+                path: "/docs/components/em"
             },
             {
                 title: "Heading",
                 path: "/docs/components/heading"
             },
             {
-                title: "Em",
-                path: "/docs/components/em"
+                title: "Kbd",
+                path: "/docs/components/kbd",
+                is_new:true
             },
+            {
+                title: "Progress",
+                path: "/docs/components/progress",
+                is_new:true
+            },
+           
             {
                 title: "Separator",
                 path: "/docs/components/separator"
@@ -116,11 +134,13 @@ const sections = [
             // }
             {
                 title: "Toggle",
-                path : "/docs/components/toggle"
+                path : "/docs/components/toggle",
+                is_new:true
             },
             {
                 title: "ToggleGroup",
-                path: "/docs/components/toggle-group"
+                path: "/docs/components/toggle-group",
+                is_new:true
             },
             {
                 title: "Tooltip",
