@@ -4,9 +4,7 @@ const code = {
          
 const SwitchExample = () => (
     <div>
-       <Switch variant="classic" defaultChecked/>
-       <Switch variant="surface" defaultChecked/>
-       <Switch variant="solid" defaultChecked/>
+        <Switch />   
     </div>
     )`
     },
