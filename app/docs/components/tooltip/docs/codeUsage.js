@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import Tooltip from "@rad-ui/ui/Tooltip"
+        code: `import Tooltip from "@radui/ui/Tooltip"
 
 const ToolTipExample = () => (
     <Tooltip content="Tooltip content">
