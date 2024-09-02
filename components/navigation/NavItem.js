@@ -19,7 +19,7 @@ const NavItem = ({ item, path }) => {
             <div>
             {item?.title}
             </div>
-            {item.is_new?<div className='text-xs'><Badge color="red">New!</Badge></div>:null}
+            {item.is_new?<div className='text-xs'><Badge color="purple">New!</Badge></div>:null}
         </div>
        </Link>
 
