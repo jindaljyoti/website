@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import BlockQuote from "@rad-ui/ui/BlockQuote"
+        code: `import BlockQuote from "@radui/ui/BlockQuote"
 
 const BlockQuoteExample = () => (
     <div>

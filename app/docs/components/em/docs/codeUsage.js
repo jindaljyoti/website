@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import Em from "@rad-ui/ui/Em"
+        code: `import Em from "@radui/ui/Em"
 
 const EmExample = () => (
     <div>

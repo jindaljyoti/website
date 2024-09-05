@@ -1,6 +1,6 @@
 const code = {
     javascript: {
-        code: `import Heading from "@rad-ui/ui/Heading"
+        code: `import Heading from "@radui/ui/Heading"
 
 const HeadingExamples = () => (
     <div>
